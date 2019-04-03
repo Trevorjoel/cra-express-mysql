@@ -1,0 +1,23 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "verbose": true,
+  "ignore": [
+    "node_modules",
+    ".next"
+  ],
+
+  "ext": "js json",
+  "dependencies": {
+    "express": "^4.16.4",
+    "mysql": "^2.16.0"
+  },
+  "scripts": {
+    "dev": "nodemon server.js ",
+    "build": "next build",
+    "start": "NODE_ENV=production node server.js"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  }
+}
