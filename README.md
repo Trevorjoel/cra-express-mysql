@@ -22,7 +22,7 @@ Node server runs on [http://localhost:5000]
 
 server.js file contains back-end logic to respond to requests and contains simple SQL queries.
 
-Issues:
+## Issues:
 Related to hotloading not working.
 
 Expected: Modify front-end or back end files.
@@ -32,7 +32,7 @@ Expected: Modify front-end or back end files.
           
           
           
-Reproduce/investigate:
+### Reproduce/investigate:
 
 1) In terminal: 
                 Run the command "npm run dev" from the server folder.
