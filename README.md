@@ -1,7 +1,9 @@
 # cra-express-mysql
 
 This project is an experimentation with full stack configuration of :
-NODE, EXPRESS, MYSQL, CREATE REACT APP and development packages.
+NODE, EXPRESS, MYSQL, CREATE REACT APP and other development packages.
+The purpose is to learn and create a full-stack for further projects.
+You're encourages to critique my work and offer suggestions.
 
 ## Available Scripts
 
@@ -20,6 +22,10 @@ In the Server directory, run:
 Runs the Express server in the development mode.<br>
 Node server runs on [http://localhost:5000]
 
+## Run concurrently
+Server and client can be run with a single command.
+In the terminal at the project root directory 'npm start'.
+
 server.js file contains back-end logic to respond to requests and contains simple SQL queries.
 
 ## Issues:
@@ -37,10 +43,11 @@ Expected: Modify front-end or back end files.
 1) In terminal: 
                 Run the command "npm run dev" from the server folder.
                 Run the command "npm start" from the client folder.
+                Sometimes at this stage we get the error in step 4.
                 
 2) Attempt to modify front-end code in client/src/App.js
 
-3) Save file nothing happens
+3) Save file, no change to the page. i.e no hot loading.
 
 4) Refresh browser. The changes in code appear on the page. 
 
@@ -51,10 +58,9 @@ Expected: Modify front-end or back end files.
   And in the browser console: 
   "The development server has disconnected. Refresh the page if necessary."</b>
 
-5) This problem causes hotloading to not work for the client (create-react-app preconfiguration) and the server(nodemon).    
-
-6) Modifying back-end logic nodemon restarts and page refresh will load all back-end changes but I expect not to have to refresh the page after saving     the file.
-
-6) If I remove all the logic for the call and request from server/server.js and client/src/App.js the client hotloading returns.
+5) This problem seems to be the cause of hot loading not working for the client (create-react-app preconfiguration).
+   It's worth noting I think that nodemon does not refresh the browser.
+   Modifying back-end logic & saving file restarts the server and a manual page refresh will load all back-end changes so I think it's working ok.
+7) If I remove all the express logic for the call and request from server/server.js and client/src/App.js the client hot loading returns.
    
 
