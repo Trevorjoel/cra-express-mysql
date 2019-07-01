@@ -5,7 +5,7 @@ NODE, EXPRESS, MYSQL, CREATE REACT APP and other development packages.
 The purpose is to learn and create a full-stack for further projects.
 You're encourages to critique my work and offer suggestions.
 
-## Available Scripts
+## Available Scripts ### Don't forget to connect up MYSQL DB
 
 In the client directory, run:
 

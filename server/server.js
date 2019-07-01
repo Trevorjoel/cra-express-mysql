@@ -1,5 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+
 const mysql = require('mysql');
 const app = express();
 const port = process.env.PORT || 5000;
@@ -11,7 +12,7 @@ let connection = mysql.createConnection({
     user     : 'nodeapp',
     password : 'nodeapp',
     database : 'qualification',
-    port: 3307
+    port: 3306
 });
 
 connection.connect((err) =>{

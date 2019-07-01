@@ -1,25 +1,33 @@
-$topbar-responsive-bg: #2c3840;
-$topbar-responsive-animation-type: fade-in; // or use slide-down or none
 
+$primaryColour: #14679e;
+$topbar-responsive-bg: #14679e;
+$topbar-responsive-animation-type: fade-in; // or use slide-down or none
+.top-bar{
+  background-color: $primaryColour;
+}
 .top-bar ul {
   background-color: #2c3840;
 }
 .topbar-responsive {
-  background: $topbar-responsive-bg;
+  background: $primaryColour;
   padding: 1rem 1.5rem;
 
   .topbar-responsive-logo {
     color: $white;
     vertical-align: middle;
   }
-
+.topbar-responsive-links{
+  margin-left: 40px
+}
   .menu {
     background: $topbar-responsive-bg;
 
     li:last-of-type {
       margin-right: 0;
     }
-
+    .topbar-title{
+      margin-right: 40px;
+    }
     a {
       color: $white;
       transition: color 0.15s ease-in;

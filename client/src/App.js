@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-
 import logo from './logo.svg';
-import logo1 from './images/Sign96x96.png';
+import NavBar from './components/Navbar';
 import './App.scss';
 
 class App extends Component {
@@ -11,7 +10,6 @@ class App extends Component {
         responseToPost: '',
         queryBody: ''
     };
-
 
     componentDidMount() {
         this.callApi()
@@ -48,32 +46,13 @@ class App extends Component {
     render() {
         return (
             <div className="App">
-                <nav className="top-bar topbar-responsive">
-                    <div className="top-bar-title">
-          <span data-responsive-toggle="topbar-responsive" data-hide-for="medium">
-              { /*  <button className="menu-icon" type="button" data-toggle /> */}
-          </span>
-                        <img src={logo1} />
-                        <a className="topbar-responsive-logo" href="#"><strong>Trevor Joel</strong></a>
-                    </div>
-                    <div id="topbar-responsive" className="topbar-responsive-links">
-                        <div className="top-bar-right">
-                            <ul className="menu simple vertical medium-horizontal">
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">About</a></li>
-                                <li><a href="#">Projects</a></li>
-                                <li>
-                                    <button type="button" className="button hollow topbar-responsive-button">CONTACT</button>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
+                <NavBar />
 
                 <header className="App-header">
+                    
                     <img src={logo} className="App-logo" alt="logo" />
                     <p>
-                        Edit <code>SSSS</code> and save to reload.
+                      Body.
                     </p>
 
                 </header>
