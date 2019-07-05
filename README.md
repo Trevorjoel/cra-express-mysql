@@ -30,6 +30,9 @@ server.js file contains back-end logic to respond to requests and contains simpl
 ## Issues:
 Related to hotloading not working.
 
+
+
+
 Expected: Modify front-end or back end files.
           Save file.
           Nodemon updates the backend
@@ -62,4 +65,6 @@ Expected: Modify front-end or back end files.
    Modifying back-end logic & saving file restarts the server and a manual page refresh will load all back-end changes so I think it's working ok.
 7) If I remove all the express logic for the call and request from server/server.js and client/src/App.js the client hot loading returns.
    
+Note: when I remove the "Port" line form the client/package.json file hotloading on the front end works but lose connection wiith the back end. The server restarts on save but the front end does not so when working on the back end you need to page refresh. Not ideal. Still unresolved.
 
+It's something to do with conflicting ports in this line: "proxy": "http://localhost:5000",
